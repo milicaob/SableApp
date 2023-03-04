@@ -41,7 +41,6 @@ class RecyclerAdapter(private val fragmentManager: FragmentManager, private val 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
 
         val poi = poiData[position]
-<<<<<<< HEAD
         val image = poi.images[0]
         val url = image.source_url
 
@@ -51,18 +50,7 @@ class RecyclerAdapter(private val fragmentManager: FragmentManager, private val 
         //viewHolder.itemImage.setImageResource(images[0])
 
 
-=======
-        var url = ""
 
-        if(poi.images.isNotEmpty()) {
-            val image = poi.images[0]
-            url = image.source_url
-            Glide.with(viewHolder.itemView).load(url).into(viewHolder.itemImage)
-        }
-
-        viewHolder.itemDetail.text = poi.name
-
->>>>>>> 6e9cd1e (Gotovo! Male izmene)
         viewHolder.cardView.setOnClickListener {
             val fragmentTransaction = fragmentManager.beginTransaction()
             val bundle = Bundle()

@@ -50,7 +50,6 @@ class HomeF : Fragment() {
         GlobalScope.launch(Dispatchers.Main) {
             val apiKey = "E9CHL2VB"
             val token = "81vio7opy5th0q8z5b3ch7whyophexp0"
-<<<<<<< HEAD
             val locationId = "Paris"
             val tagLabels = "cuisine"
             val triposo = RetrofitClient.getInstance().create(API::class.java)
@@ -59,18 +58,6 @@ class HomeF : Fragment() {
             GlobalScope.launch(Dispatchers.Main) {
                 val api = RetrofitClient.getInstance().create(API::class.java)
                 val response = api.getDog(apiKey, token)
-=======
-            val activity = getActivity()
-            val sharedPref = activity?.getSharedPreferences("my_pref", Context.MODE_PRIVATE)
-            val rest = sharedPref?.getString("rest", "")
-            var tag_labels = rest.toString()
-            tag_labels = "cuisine-" + tag_labels
-
-
-            GlobalScope.launch(Dispatchers.Main) {
-                val api = RetrofitClient.getInstance().create(API::class.java)
-                val response = api.getDog(tag_labels, apiKey, token)
->>>>>>> 6e9cd1e (Gotovo! Male izmene)
                 if (response.isSuccessful) {
                     withContext(Dispatchers.Main) {
                         val fragmentManager: FragmentManager = parentFragmentManager

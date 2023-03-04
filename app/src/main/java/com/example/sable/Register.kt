@@ -90,7 +90,6 @@ class Register : Fragment() {
                 toast.show()
             }
             else {
-<<<<<<< HEAD
                 // Password is not empty
                 // Check if the password meets the desired criteria using a regex
                 val passwordPattern = Regex("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+\$).{8,}\$")
@@ -121,7 +120,6 @@ class Register : Fragment() {
                     val context = this // or getApplicationContext()
                     val message = "Password is not okay! It should have at least 8 letters, one upper case and one lower case and a number"
                     val duration = Toast.LENGTH_SHORT // or Toast.LENGTH_LONG
-=======
                 val passwordRepeat =
                     view.findViewById<EditText>(R.id.editTextTextRepeatPassword).text.toString()
                 if (passwordReg.equals(passwordRepeat)) {
@@ -161,14 +159,12 @@ class Register : Fragment() {
                     val message =
                         "Repeat password is not okay!"
                     val duration = Toast.LENGTH_SHORT
->>>>>>> 6e9cd1e (Gotovo! Male izmene)
                     val toast = Toast.makeText(getContext(), message, duration)
                     toast.show()
                 }
             }
         }
 
-<<<<<<< HEAD
         val imageButton = view.findViewById<ImageView>(R.id.imageView)
         imageButton.setOnClickListener {
             val intent = Intent(Intent.ACTION_GET_CONTENT).apply {
@@ -180,9 +176,7 @@ class Register : Fragment() {
 
 
 
-=======
     }
->>>>>>> 6e9cd1e (Gotovo! Male izmene)
 
     }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

@@ -59,11 +59,9 @@ class Home : AppCompatActivity() {
         val activity = this
         val recyclerView = activity.findViewById<RecyclerView>(R.id.recycler_view)
         btNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
-<<<<<<< HEAD
         //btNav?.inflateMenu(R.menu.bottom_nav_menu)
         //btNav?.setupWithNavController(navController)
-=======
->>>>>>> 6e9cd1e (Gotovo! Male izmene)
+
 
         btNav?.setOnItemSelectedListener { item ->
             when (item.itemId) {

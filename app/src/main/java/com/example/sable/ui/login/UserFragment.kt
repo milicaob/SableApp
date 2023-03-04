@@ -33,12 +33,11 @@ class UserFragment : Fragment() {
     private lateinit var loginViewModel: LoginViewModel
     private var _binding: FragmentUserBinding? = null
 
-<<<<<<< HEAD
+
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
-=======
->>>>>>> 6e9cd1e (Gotovo! Male izmene)
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
